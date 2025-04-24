@@ -38,3 +38,20 @@ let num8 = "asdf512341";
 let num9 = "asasdfzvcxdf5124123341";
 
 console.log(isNaN(+num8) == isNaN(+num9));
+
+//--------------------------------------------
+let stringans = "JAVASCRIPT";
+stringans = stringans.toLowerCase();
+
+let stringans2 = "stringans";
+stringans2 = stringans2[0].toUpperCase() + stringans2.slice(1);
+
+function truncate (str, maxLength) {
+  if (str.length > maxLength) {
+    return str.substr(0, maxLength - 1) + "...";
+  } else {
+    return str;
+  }
+}
+console.log(truncate("abcdef", 4));
+console.log(truncate("abcdef", 9));
