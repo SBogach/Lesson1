@@ -27,14 +27,14 @@ let num3 = +str1;
 let num4 = 0.3;
 let num5 = 0.6;
 let num7;
-num7 = Math.cell(num4);
+num7 = Math.ceil(num4);
 num7 = Math.floor(num4);
 num7 = Math.round(num4);
-num7 = Math.cell(num5);
+num7 = Math.ceil(num5);
 num7 = Math.floor(num5);
 num7 = Math.round(num5);
 
-let num8 = "asdf" + 512341;
-let num9 = "asasdfzvcxdf" + 5124123341;
+let num8 = "asdf512341";
+let num9 = "asasdfzvcxdf5124123341";
 
-console.log(isNaN(number8) == isNaN(number9));
+console.log(isNaN(+num8) == isNaN(+num9));
