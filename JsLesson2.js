@@ -1,3 +1,10 @@
+function isEmpty(obj) {
+  for (let i in obj) {
+    return true;
+  }
+  return false;
+}
+
 let user = {};
 
 user.name = "John";
@@ -6,9 +13,4 @@ user.name = "Pete";
 
 delete user.name;
 
-function isEmpty(obj) {
-  for (let i in obj) {
-    return true;
-  }
-  return false;
-}
+alert(isEmpty(user));
