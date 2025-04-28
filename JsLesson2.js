@@ -13,4 +13,4 @@ user.name = "Pete";
 
 delete user.name;
 
-alert(isEmpty(user));
+alert(isEmpty(user) ? "Не пусто" : "Пусто");
