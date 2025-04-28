@@ -1,8 +1,8 @@
 function isEmpty(obj) {
   for (let i in obj) {
-    return true;
+    return false;
   }
-  return false;
+  return true;
 }
 
 let user = {};
@@ -13,4 +13,4 @@ user.name = "Pete";
 
 delete user.name;
 
-alert(isEmpty(user) ? "Не пусто" : "Пусто");
+alert(isEmpty(user) ? "Пусто" : "Не пусто");
